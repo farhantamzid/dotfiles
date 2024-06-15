@@ -165,3 +165,6 @@ eval "$(zoxide init zsh)"
 alias tree="tree -a"
 
 
+setopt globdots
+
+
