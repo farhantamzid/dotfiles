@@ -162,6 +162,6 @@ alias ls="eza --color=always --icons=always --long -A   --total-size"
 alias cd="z"
 eval "$(zoxide init zsh)"
 
-
+alias tree="tree -a"
 
 
