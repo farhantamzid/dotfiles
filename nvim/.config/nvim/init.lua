@@ -260,6 +260,9 @@ require('lazy').setup({
       },
     },
   },
+  {
+    'ThePrimeagen/vim-be-good',
+  },
 
   -- NOTE: Plugins can also be configured to run Lua code when they are loaded.
   --
