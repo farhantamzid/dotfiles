@@ -169,3 +169,5 @@ alias tree="tree -a"
 setopt globdots
 
 
+
+eval $(thefuck --alias)
