@@ -124,11 +124,11 @@ bindkey "^F" fzf-file-widget
 
 
 
-export FZF_DEFAULT_COMMAND='rg --files --hidden --follow --no-require-git '
+export FZF_DEFAULT_COMMAND='fd --hidden --follow --no-require-git '
 export FZF_CTRL_T_COMMAND=$FZF_DEFAULT_COMMAND
-
+export FZF_ALT_C_COMMAND="$FZF_DEFAULT_COMMAND --type directory" # --type from fd
 _fzf_compgen_path() {
-  rg --files --hidden --follow --no-require-git
+  fd --hidden --follow --no-require-git
 }
 
 
