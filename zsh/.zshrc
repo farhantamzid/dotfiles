@@ -119,8 +119,8 @@ export PATH="/opt/homebrew/opt/python@3.12/libexec/bin:$PATH"
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 bindkey '^[[Z'   autosuggest-accept       # tab          | complete
 #bindkey '^[[Z' complete-word  # shift + tab  | autosuggest
-bindkey "^P" fzf-cd-widget
-bindkey "^F" fzf-file-widget
+bindkey "^O" fzf-cd-widget
+bindkey "^U" fzf-file-widget
 
 
 
