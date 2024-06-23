@@ -1,0 +1,42 @@
+
+# for this to work you must configure sudo such that
+# it will be able to run the command without password
+
+yabai -m signal --add event=dock_did_restart action="sudo yabai --load-sa"
+sudo yabai --load-sa
+
+# .. more yabai startup stuff
+yabai -m config layout bsp
+yabai -m config window_placement second_child
+
+yabai -m rule --add app!="^(Alacritty|Visual Studio Code|Safari|Code)$" manage=off
+
+
+#yabai -m config mouse_modifier alt
+
+#yabai -m config mouse_action1 move
+
+#yabai -m config mouse_action2 resize
+
+# yabai -m mouse_drop_action swap
+
+
+yabai -m space 1 --label home
+
+yabai -m space 2 --label browser
+yabai -m rule --add app="Safari" space=^"browser"
+
+yabai -m space 3 --label ide
+yabai -m rule --add app="Code" space=^"ide"
+yabai -m rule --add app="Visual Studio Code" space=^"ide"
+
+yabai -m space 4
+yabai -m rule --add app="Alacritty" space=4
+
+# focus window after active space changes
+yabai -m signal --add event=space_changed action="yabai -m window --focus \$(yabai -m query --windows --space | jq .[0].id)"
+
+# focus window after active display changes
+yabai -m signal --add event=display_changed action="yabai -m window --focus \$(yabai -m query --windows --space | jq .[0].id)"
+
+# Define window rules to assign applications to specific spaces
