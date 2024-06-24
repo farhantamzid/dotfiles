@@ -7,7 +7,7 @@ alt - l : yabai -m window --focus east
 alt - tab : (yabai -m display --focus next || yabai -m display --focus prev)
 
 # Toggle Alacritty window between its space and the current space
-ctrl - f : ~/.config/yabai/toggle_alacritty.sh
+ctrl - t : ~/.config/yabai/toggle_alacritty.sh
 
 ctrl - s : ~/.config/yabai/toggle_safari.sh
 
@@ -15,3 +15,10 @@ ctrl - v : ~/.config/yabai/toggle_vscode.sh
 
 # send window to display and follow focus
 alt - right : ((yabai -m window --display next && yabai -m display --focus next) || (yabai -m window --display prev && yabai -m display --focus prev))
+# send window to specific space and follow focus
+
+alt + shift - 1 : yabai -m window --space 1 && yabai -m space --focus 1
+alt + shift - s : yabai -m window --space 2 && yabai -m space --focus 2
+alt + shift - v : yabai -m window --space 3 && yabai -m space --focus 3
+alt + shift - t : yabai -m window --space 4 && yabai -m space --focus 4
+alt + shift - 5 : yabai -m window --space 5 && yabai -m space --focus 5
