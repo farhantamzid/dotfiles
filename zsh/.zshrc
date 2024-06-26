@@ -120,7 +120,7 @@ export PATH="/opt/homebrew/opt/python@3.12/libexec/bin:$PATH"
 bindkey '^[[Z'   autosuggest-accept       # tab          | complete
 #bindkey '^[[Z' complete-word  # shift + tab  | autosuggest
 bindkey "^O" fzf-cd-widget
-bindkey "^U" fzf-file-widget
+bindkey "^F" fzf-file-widget
 
 
 
@@ -161,13 +161,13 @@ export NVM_DIR="$HOME/.nvm"
 alias ls="eza --color=always --icons=always --long -A   --total-size"
 
 alias cd="z"
+
 eval "$(zoxide init zsh)"
 
+alias finder="yazi"
 alias tree="tree -a"
-
 
 setopt globdots
 
-
-
 eval $(thefuck --alias)
+
