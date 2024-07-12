@@ -167,6 +167,8 @@ eval "$(zoxide init zsh)"
 alias finder="yazi"
 alias tree="tree -a"
 
+alias lg="lazygit"
+
 setopt globdots
 
 eval $(thefuck --alias)
