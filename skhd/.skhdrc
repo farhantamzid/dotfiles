@@ -14,7 +14,7 @@ ctrl - s : ~/.config/yabai/toggle_safari.sh
 ctrl - v : ~/.config/yabai/toggle_vscode.sh
 
 # send window to display and follow focus
-# alt - right : ((yabai -m window --display next && yabai -m display --focus next) || (yabai -m window --display prev && yabai -m display --focus prev))
+alt - right : ((yabai -m window --display next && yabai -m display --focus next) || (yabai -m window --display prev && yabai -m display --focus prev))
 # send window to specific space and follow focus
 hyper - t : ~/.config/yabai/check_alacritty.sh
 hyper - s : ~/.config/yabai/check_safari.sh
