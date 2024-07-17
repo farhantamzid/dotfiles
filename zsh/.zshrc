@@ -158,7 +158,7 @@ export NVM_DIR="$HOME/.nvm"
 
 # ---- Eza (better ls) -----
 
-alias ls="eza --color=always --icons=always --long -A   --total-size"
+alias ls="eza --color=always --icons=always --long -A --total-size"
 
 alias cd="z"
 
