@@ -35,4 +35,4 @@
 [diff]
     colorMoved = default
 [alias]
-	com = commit -am
+	ac = commit -am
