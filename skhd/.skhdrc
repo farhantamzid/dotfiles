@@ -13,12 +13,15 @@ ctrl - s : ~/.config/yabai/toggle_safari.sh
 
 ctrl - v : ~/.config/yabai/toggle_vscode.sh
 
+ctrl - m : ~/.config/yabai/toggle_messenger.sh
+
 # send window to display and follow focus
 alt - right : ((yabai -m window --display next && yabai -m display --focus next) || (yabai -m window --display prev && yabai -m display --focus prev))
 # send window to specific space and follow focus
 hyper - t : ~/.config/yabai/check_alacritty.sh
 hyper - s : ~/.config/yabai/check_safari.sh
 hyper - v : ~/.config/yabai/check_vscode.sh
+hyper - m : ~/.config/yabai/check_messenger.sh
 hyper - l : ~/.config/yabai/fullscreen.sh
 alt + shift - 1 : yabai -m window --space 1 && yabai -m space --focus 1
 alt + shift - s : yabai -m window --space 2 && yabai -m space --focus 2
