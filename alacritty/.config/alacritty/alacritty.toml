@@ -4,6 +4,7 @@ TERM = "xterm-256color"
 normal.family = "JetBrainsMono Nerd Font"
 size = 18
 
+
 [window]
 padding.x = 10
 padding.y = 10
