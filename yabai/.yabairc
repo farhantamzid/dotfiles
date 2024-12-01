@@ -60,3 +60,4 @@ yabai -m signal --add event=mission_control_exit action='echo "refresh" | nc -U 
 yabai -m signal --add event=display_added action='echo "refresh" | nc -U /tmp/yabai-indicator.socket'
 yabai -m signal --add event=display_removed action='echo "refresh" | nc -U /tmp/yabai-indicator.socket'
 yabai -m rule --apply
+

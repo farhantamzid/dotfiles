@@ -121,7 +121,7 @@ export PATH="/opt/homebrew/opt/python@3.12/libexec/bin:$PATH"
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 bindkey '^[[Z'   autosuggest-accept       # tab          | complete
 #bindkey '^[[Z' complete-word  # shift + tab  | autosuggest
-bindkey "^H" fzf-cd-widget
+bindkey "^O" fzf-cd-widget
 bindkey "^F" fzf-file-widget
 
 
@@ -184,3 +184,6 @@ export EDITOR=nvim
 
 # Amazon Q post block. Keep at the bottom of this file.
 [[ -f "${HOME}/Library/Application Support/amazon-q/shell/zshrc.post.zsh" ]] && builtin source "${HOME}/Library/Application Support/amazon-q/shell/zshrc.post.zsh"
+bindkey -r '^J'
+bindkey -r '^H'
+bindkey -r '^L'
