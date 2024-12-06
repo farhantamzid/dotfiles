@@ -13,7 +13,7 @@ decorations = "Buttonless"
 opacity=0.8
 
 [keyboard]
-bindings = [{key ="Space",mods="Command|Control",mode="~Search",action="ToggleViMode"}]
+bindings = [{key ="B",mods="Control",mode="~Search",action="ToggleViMode"}]
 
 [general]
 import = [
