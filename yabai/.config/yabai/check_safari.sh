@@ -4,7 +4,7 @@
 TARGET_SPACE=2
 
 # Get the ID of the Safari window
-SAFARI_WINDOW_ID=$(yabai -m query --windows | jq -r '.[] | select(.app == "Safari") | .id')
+SAFARI_WINDOW_ID=$(yabai -m query --windows | jq -r '.[] | select(.app == "Google Chrome") | .id')
 
 # Exit if no SAFARI window is found
 if [[ -z $SAFARI_WINDOW_ID ]]; then

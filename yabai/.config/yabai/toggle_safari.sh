@@ -7,7 +7,7 @@ SAFARI_SPACE=2
 CURRENT_SPACE=$(yabai -m query --spaces --space | jq -r '.index')
 
 # Get the ID of the SAFARI window
-SAFARI_WINDOW_ID=$(yabai -m query --windows | jq -r '.[] | select(.app == "Safari") | .id')
+SAFARI_WINDOW_ID=$(yabai -m query --windows | jq -r '.[] | select(.app == "Google Chrome") | .id')
 
 # Check if SAFARI is already in the current space
 IS_SAFARI_IN_CURRENT_SPACE=$(yabai -m query --windows --space | jq -r ".[] | select(.id == $SAFARI_WINDOW_ID) | .id")
