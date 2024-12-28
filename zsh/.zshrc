@@ -170,6 +170,17 @@ eval "$(zoxide init zsh)"
 
 alias finder="yazi"
 alias tree="tree -a"
+alias ping="x ping"
+alias brew search="x brew"
+
+brew() {
+    if [[ $1 == "search" && $# -eq 1 ]]; then
+        x brew
+    else
+        command brew "$@"
+    fi
+}
+
 
 alias lg="lazygit"
 
@@ -187,3 +198,6 @@ export EDITOR=nvim
 bindkey -r '^J'
 bindkey -r '^H'
 bindkey -r '^L'
+
+[ ! -f "$HOME/.x-cmd.root/X" ] || . "$HOME/.x-cmd.root/X" # boot up x-cmd.
+
