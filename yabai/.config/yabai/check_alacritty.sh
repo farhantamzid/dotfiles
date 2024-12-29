@@ -4,7 +4,7 @@
 TARGET_SPACE=4
 
 # Get the ID of the Alacritty window
-ALACRITTY_WINDOW_ID=$(yabai -m query --windows | jq -r '.[] | select(.app == "Alacritty") | .id')
+ALACRITTY_WINDOW_ID=$(yabai -m query --windows | jq -r '.[] | select(.app == "Ghostty") | .id')
 
 # Exit if no Alacritty window is found
 if [[ -z $ALACRITTY_WINDOW_ID ]]; then
