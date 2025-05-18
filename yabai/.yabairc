@@ -14,7 +14,7 @@ yabai -m config window_placement second_child
 # yabai -m config right_padding  0
 # yabai -m config window_gap     0
 
-yabai -m rule --add app!="^(Alacritty|Visual Studio Code|Safari|Code|WezTerm|Obsidian|Google Chrome|Chrome|Messenger|Android Studio|Ghostty)$" manage=off
+yabai -m rule --add app!="^(Alacritty|Visual Studio Code|Safari|Code|WezTerm|Obsidian|Google Chrome|Chrome|Messenger|Android Studio|Ghostty|Cursor|Microsoft Edge|Edge)$" manage=off
 yabai -m rule --apply
 
 
@@ -33,11 +33,13 @@ yabai -m space 2
 yabai -m rule --add app="Safari" space=2
 yabai -m rule --add app="Chrome" space=2
 yabai -m rule --add app="Google Chrome" space=2
+yabai -m rule --add app="Microsoft Edge" space=2
 
 yabai -m space 3
 yabai -m rule --add app="Code" space=3
 yabai -m rule --add app="Visual Studio Code" space=3
 yabai -m rule --add app="Android Studio" space=3
+yabai -m rule --add app="Cursor" space=3
 
 
 yabai -m space 4
@@ -49,10 +51,14 @@ yabai -m space 5
 yabai -m rule --add app="Messenger" space=5
 yabai -m space 6
 
+
+
 yabai -m rule --apply
 # focus window after active space changes
 yabai -m signal --add event=space_changed action="yabai -m window --focus \$(yabai -m query --windows --space | jq .[0].id)"
 yabai -m rule --apply
+
+
 # focus window after active display changes
 yabai -m signal --add event=display_changed action="yabai -m window --focus \$(yabai -m query --windows --space | jq .[0].id)"
 yabai -m rule --apply
