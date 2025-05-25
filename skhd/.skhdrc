@@ -23,6 +23,8 @@ hyper - s : ~/.config/yabai/check_safari.sh
 hyper - v : ~/.config/yabai/check_vscode.sh
 hyper - m : ~/.config/yabai/check_messenger.sh
 hyper - q : ~/.config/yabai/fullscreen.sh
+hyper - y : yabai --start-service
+hyper - u : yabai --stop-service
 alt + shift - 1 : yabai -m window --space 1 && yabai -m space --focus 1
 alt + shift - s : yabai -m window --space 2 && yabai -m space --focus 2
 alt + shift - v : yabai -m window --space 3 && yabai -m space --focus 3
