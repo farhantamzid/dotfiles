@@ -7,7 +7,7 @@ ALACRITTY_SPACE=4
 CURRENT_SPACE=$(yabai -m query --spaces --space | jq -r '.index')
 
 # Get the ID of the Alacritty window
-ALACRITTY_WINDOW_ID=$(yabai -m query --windows | jq -r '.[] | select(.app == "Alacritty") | .id')
+ALACRITTY_WINDOW_ID=$(yabai -m query --windows | jq -r '.[] | select(.app == "Ghostty") | .id')
 
 # Check if Alacritty is already in the current space
 IS_ALACRITTY_IN_CURRENT_SPACE=$(yabai -m query --windows --space | jq -r ".[] | select(.id == $ALACRITTY_WINDOW_ID) | .id")
